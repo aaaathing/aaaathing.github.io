@@ -1,0 +1,226 @@
+# to add update, add "-- "+Date.now(), then title, and description. add it to the end of file
+# make sure things that happen later are after
+
+-- 1626034439018
+Updated crack textures
+
+-- 1626066610672
+Updated liquid physics.
+Liquid is now hitbox-free.
+You can place non solid blocks where you are standing.
+
+-- 1626107698911
+Add slime block.
+Add slime block. Slime and beds are bouncy. Slime and soul sand slows you down. Soul sand is 1 pixel lower than normal block.
+
+-- 1626114879149
+Added particles.
+For now, only digging a block makes particles.
+
+-- 1626192985315
+Added ice, soul soil, calcite.
+
+-- 1626192985315
+Add particle when landing on a block. Play sound when anvil falls.
+
+-- 1626286136420
+Added loom, furnace, note block, jukebox, smoker, blast funace.
+
+-- 1626369710270
+Added colored text.
+Its a little glitchy
+
+-- 1626632308954
+Torches can now be placed sideways
+
+-- 1626636442607
+v1.0.3
+
+-- 1626717529063
+Add hunger bar.
+Add hunger bar. Hunger bar can control speed of healing.
+Added apple. Right click to eat edible stuff.
+Leaves now also drop apples.
+
+-- 1626740701840
+Add crafting in inventory.
+It is 2x2 instead of 3x3.
+Add pickaxes
+
+-- 1626825559188
+Blocks are categorized into different types.
+Blocks are categorized into different types.
+Different types can be mined with different things.
+For example, blocks that are rock3 type can be only mined with iron and diamond pickaxe.
+
+-- 1626901231517
+Add spliting stacks.
+Right click to split. Only adds one to the square you clicked.
+
+-- 1626981311496
+Add moss block, moss carpet, cave vines
+
+-- 1626985250308
+Add spore blossoms, rooted dirt, hanging roots.
+
+-- 1626997663851
+Add durability for pickaxes.
+
+-- 1627085796307
+Entities work with multiplayer now.
+
+-- 1628382379381
+Add sugarcane
+Add sugarcane, entitites are now saved when you save the world, you drop your stuff when you die, there is an animation when you get items.
+
+-- 1628546404322
+When you save a world, an picture of the world also gets saved.
+
+-- 1628970639646
+Fix a few lighting crashes
+Fix a few lighting crashes
+You can now dig the bedrock at the bottom of the world.
+
+-- 1628973011593
+You can fall into the void and if you are playing in survival mode, you will die
+
+-- 1630178103542
+Added shovels and axes.
+Added shovels and axes. Also added new crafting recipes.
+
+-- 1630542356679
+Add musroom stuff.
+Add musroom stuff. Textures now rotate correctly which means glass panes and sideways logs are fixed.
+
+-- 1630716232851
+Add terracotta and glazed terracotta
+
+-- 1632188540294
+In multiplayer, your inventory will be saved.
+In multiplayer, your inventory will be saved. So if you leave and join a server, your inventory will be how it was before you left.
+
+-- 1633294912875
+v1.0.4
+Added a better background for the main menu which is a panorama.
+Added smooth transition on the loading screen when it is done loading.
+
+-- 1633813127445
+Experience points
+
+-- 1634083401657
+You can now download and upload worlds.
+
+-- 1634336631981
+There are now animated textures.
+There are now animated textures.
+Blocks that are animated currently: water, lava, nether portal, prismarine, sea lantern, stonecutter
+
+-- 1635291744304
+Controls can now be changed by going to options > change controls
+
+-- 1635639485897
+Updated physics so it only runs once every tick
+
+-- 1636221585057
+Added skins
+
+-- 1638408587875
+Textures are now updated to Minecraft 1.18 textures.
+
+-- 1640022932825
+Menu music has been added
+
+-- 1642117189522
+Redstone has been added. It will not be released yet.
+
+-- 1642729232420
+Redstone torches have been added
+Redstone lamps, redstone blocks, and tnt can also be used in redstone circuits.
+
+-- 1648771200000
+v1.0.5
+The redstone update
+
+-- 1656633600000
+The summer updates
+Flowing water, lava, spreading fire and more.
+
+-- 1677906972021
+Resource packs
+Resource packs have been added allowing custom textures!
+
+-- 1677709915346
+Website broken
+The MineKhan website is broken. We will be fixing it. This may take up to a month.
+Edit: This is probably a bug in Replit.
+Edit March 7: This seems to be fixed. We are veryfing that it is fixed.,Edit: The website is broken again,Edit: This may be caused by a new feature: https://ask.replit.com/t/upcoming-replit-changes-community-crisis-waiting-to-happen/13985,Edit: This seems to be fixed by Replit: https://status.replit.com/history/2023/march/ndq65dsbkckvuwth-repl-dns-is-unstable,Resolved: We have moved our website to https://thingmaker.us.eu.org/
+
+-- 1678168026344
+Texture change
+The texture atlas is now 256 by 4096 pixels.
+
+-- 1678551892258
+Nether fog and End fog
+There is now nether fog and end fog. Nether terrain has also been changed.
+
+-- 1679095885314
+Multiple commands
+You can now run multiple commands at the same time by doing something like this: /command1 /command2
+
+-- 1680668871140
+Ambient sounds optimization
+Before, ambient sounds were very slow. Now, they are a lot faster. This will be released in the next update.
+
+-- 1681183104406
+Hardcore mode
+A new game mode has been added: hardcore mode. You can search it up to find out what it is.
+
+-- 1681345825234
+Double sided signs
+Signs are now double sided. You can edit the other side by going to the other side of the sign.
+
+-- 1681576919542
+Campfires
+Campfires now set you on fire and can be set on fire by burning entities.
+
+-- 1683244218292
+Liquids seen on inside
+Liquid sides can now be seen while inside the liquid.
+
+-- 1683849455621
+Added a bunch of old updates
+
+-- 1684300110954
+New breaking sound
+When breaking blocks, there is now a sound effect.
+
+-- 1686779463025
+End portals can now be activated with end portal frames
+
+-- 1686866410751
+Fixed population problem
+Previously, trees would disappear when loading saves and the player position was far from spawn. This may break old saves. This problem has existed for many versions.
+
+-- 1687149971502
+1.20 stuff
+Added cherry and bamboo stuff, and some other stuff. Total time: about 2 hours and 25 minutes
+
+-- 1698612894570
+v1.1.0
+Version Beta 1.1.0. Terrain has been updated which includes many more biomes and trees. There are also oceans and mountains now. The server and client have been split into 2 files.
+
+-- 1701056282906
+Texture atlas updated
+The texture atlas can now contain different size textures. Before, it could only contain 16x16 textures.
+
+-- 1701652669772
+Rivers
+Small rivers have been made more common. It is done by making it go up when it flows into a place that makes it stuck.
+
+-- 1709409156719
+v1.1.1
+Many changed were made to server code. Servers now do more things and clients do less things like player health, hunger, and inventory.
+
+-- 1710366525654
+discontinued
+no more updates because too few people play. alternative: eaglercraft
