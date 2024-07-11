@@ -166,6 +166,7 @@ navbar.innerHTML = `
       <a href='/minekhan/offdown.html'>Offline download</a>
     </div>
   </div>
+	<a href="/chat/other.html">Posts</a>
 
 	<div class="dropdown" style="float:right;">
     <a class="dropdown-name">Theme</a>
