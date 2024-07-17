@@ -10,6 +10,263 @@
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 	<title>Website</title>
 
+	<style>
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap')*/;
+
+:root {
+	--primary-color: #3a4052;
+}
+
+/*
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}*/
+
+button a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+
+.title {
+	font-weight: 300;
+	font-size: 60px;
+   font-family: 'Aclonica';
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+  background-image: url("/assets/bg_small.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+.content > *{
+  vertical-align: middle;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.8;
+}
+
+.btn:hover {
+	transform: scale(0.90);
+  opacity:  ;
+}
+
+#about {
+	padding: 40px;
+	text-align: center;
+}
+
+#about p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#about h2 {
+	margin: 30px 0;
+	color: var(--primary-color);
+}
+
+.social a {
+	margin: 0 5px;
+}
+
+#channel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 50px 20px;
+  background:darkred;
+}
+#channel h1{
+  font-size:50px;
+  display:inline-block;
+}
+
+/*#links{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #030;
+	padding: 0 20px;
+  background:lightgray;
+}
+#links h1{
+  font-size:50px;
+  display:inline-block;
+}*/
+/*.search-container button, .search-container input{
+  font-size:25px !important;
+  padding:20px !important;
+}*/
+
+button {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #88f;
+  color: black;
+  border-radius: 5px;
+  border: solid black 1px;
+  cursor: pointer;
+  transition:ease 0.5s;
+}
+button:hover {
+  transform: scale(0.95);
+}
+
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+body[theme=dark] .main{
+  background:#111;
+}
+
+#cookie-banner {
+  position: sticky;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  z-index:1;
+}
+#cookie-banner .close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+h2{
+  margin-bottom:2px;
+  margin-top:16px;
+}
+h3{
+  margin-bottom:2px;
+  margin-top:12px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border:1px solid gray;
+}
+.grid-item {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: center;
+}
+
+#links{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#links a{
+  padding:8px 20px;
+  background:#eee;
+  display:block;
+  color:black;
+}
+#links a:hover{
+  background:#ccc;
+}
+#links a.interesting{
+  background: #dfd;
+}
+#links a.no{
+  background: #fdd;
+}
+body[theme=dark] #links a{
+  background:#222;
+  color:white;
+}
+body[theme=dark] #links a:hover{
+  background:#111;
+}
+body[theme=dark] #links a.interesting{
+  background: #262;
+}
+body[theme=dark] #links a.no{
+  background: #622;
+}
+	</style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRNT3CCCGH"></script>
 <script>
@@ -60,7 +317,7 @@
       let linksEl = document.querySelector("#links")
       fetch("/links.json").then(r => r.json()).then(r => {
         for(let i in r){
-          linksEl.insertAdjacentHTML("beforeend","<a href='"+r[i].url+"' class='"+(r[i].interesting?"interesting":"")+"'>"+i+"</a>")
+          linksEl.insertAdjacentHTML("beforeend","<a href='"+r[i].url+"' class='"+(r[i].no?"no ":"")+(r[i].interesting?"interesting ":"")+"'>"+i+"</a>")
         }
       })
     </script>
@@ -68,10 +325,12 @@
 
   <div class="main">
     <h2>Website</h2>
-    <p>This is the home page of the website of thingmaker. You can find many things like games and useful tools in the links above. Green background means it may be interesting.</p>
+    <p>This is the home page of the website of thingmaker. You can find many things like games and useful tools in the links above. Green background means it may be interesting. Some links don't work so they are red.</p>
     <p>Although this website has pages from minekhan.repl.co, this website is <b><u>not</u></b> MineKhan website.</p>
     <p>Because this website is now static, it cannot have login.</p>
-    
+
+		<b style="font-size:50px;background:yellow;">remember new address for website</b>
+		
     <h2>Websites you may not have even known existed!</h2>
     <a href="https://mordritch.com/">Modritch.com</a><br>
     <a href="https://minecraft-Beta-Version-16.gameprogammer.repl.co">Classicube</a><br>
@@ -84,14 +343,14 @@
     <a href="https://tommustbe12.com/">tommustbe12.com</a><br>
     <a href="https://elbozopremio.com/">elbozopremio.com</a><br>
 
-    <h2>Website Stats</h2>
+    <!--<h2>Website Stats</h2>
     <a id="showStats">Show</a>
     <p id="users-inactive">Note: Most users are inactive</p>
     <span id="users"></span>
     <a id="showUsers" style="display:none;">Show</a><br>
     <span id="posts"></span><br>
     <span id="worlds"></span><br>
-    <span id="maps"></span>
+    <span id="maps"></span>-->
 
     <h2>MineKhan videos</h2>
     <p>If it says Minecraft it actually means MineKhan</p>
@@ -272,8 +531,8 @@
     <a href="https://www.deviantart.com/yasmintt/art/Minekhan-repl-co-pics-945471226">https://www.deviantart.com/yasmintt/art/Minekhan-repl-co-pics-945471226</a><br>
     <a href="https://www.deviantart.com/yasmintt/art/Minekhan-Play-with-anybody-945480121">https://www.deviantart.com/yasmintt/art/Minekhan-Play-with-anybody-945480121</a><br>
     
-    <h2>Highest records</h2>
-    <span id="records"></span>
+    <!--<h2>Highest records</h2>
+    <span id="records"></span>-->
 
     <!--<h2>Recent updates for MineKhan</h2>
     <div id="updates"></div>
@@ -294,14 +553,14 @@
 
 <div id="cookie-banner" style="display: none">
   <p>
-    This website uses cookies to keep you signed in and for google analytics.<br>
+    This website uses cookies for because google analytics uses cookies.<br>
     By using this website, you agree to allow cookies.<br>
     Click &times; to close and don't show again.
   </p>
   <button class="close">&times;</button>
 </div>
 <script>
-  fetch("/records").then(r => r.json()).then(r => {
+  /*fetch("/records").then(r => r.json()).then(r => {
     var el = document.querySelector("#records")
     for(var i in r){
       el.innerHTML += `${i}: ${r[i]}<br>`
@@ -332,7 +591,7 @@
     fetch("/server/maps").then(r => r.json()).then(r => {
       document.querySelector("#maps").innerHTML = "There are currently "+Object.keys(r).length+" maps and other stuff."
     })
-  }
+  }*/
   /*fetch("/minekhan/recentUpdates").then(r => r.text()).then(r => {
     document.getElementById('updates').innerHTML = r.replace(/\n/g,"<br>")
   })*/
