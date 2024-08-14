@@ -31,6 +31,7 @@ document.body.style.filter = "grayscale("+(1-(userCount/50))+")"*/
   document.body.style.filter += "url(#wavy2)"
 }*/
 //const userInfo = USERDATA
+const userInfo = null
 
 function urlBase64ToUint8Array(base64String) {
   const padding = '='.repeat((4 - base64String.length % 4) % 4);
@@ -800,6 +801,10 @@ function formatElcb(el){
     }
     return true
   }
+	/*if(name === "panorama"){
+		createPanorama(el,el.getAttribute("panoramaShape"),el.getAttribute("src"))
+		return true
+	}*/
   if(name === "a") el.dontLInkTHIsS = true
   for(var n of el.childNodes){
     if(el.dontLInkTHIsS) n.dontLInkTHIsS = true
@@ -837,10 +842,14 @@ function formatElcb(el){
     el.setAttribute("id","heading_"+el.textContent.replace(notLetterRegex,"-"))
   }
 }
+
+// These are extra ones used by website
 HTMLSafeElements.add("image-recipe")
-HTMLSafeAttributes.add("codeType")
-HTMLSafeAttributes.add("notCode")
+//HTMLSafeElements.add("panorama")
+HTMLSafeAttributes.add("codetype")
+HTMLSafeAttributes.add("notcode")
 HTMLSafeAttributes.add("inline")
+//HTMLSafeAttributes.add("panoramashape")
 
 let remove = (function(){ //wow, this is a really advanced filter
   var arr = [//if you update this, also update one on website
@@ -937,6 +946,49 @@ function prismHilite(el){
       pre.elements = [Prism.highlight(pre.elements.join(""), Prism.languages[lang], lang).replace(/\./g,"&period;")]
     }
   }
+}*/
+
+/*const panoramaStrips = 24, panoramaScale = 1024
+const panoramaStripW = 2*panoramaScale*Math.sin(Math.PI/panoramaStrips)
+const panoramaStripR = panoramaScale*Math.cos(Math.PI/panoramaStrips)
+function createPanorama(el,shape,img){
+	const contain = document.createElement("div")
+	contain.className = "camera"
+	if(shape === "cyl"){
+		for(let i=0; i<panoramaStrips; i++){
+			let div = document.createElement("div")
+			div.style.transform = "rotateY("+(i/panoramaStrips)+"turn)translate3d("+((-i+(panoramaStrips/2)-0.5)*panoramaStripW)+"px,0,"+panoramaStripR+"px)"
+			div.style.backgroundImage = "url('"+img+"')"
+			//div.style.backgroundPositionX = i/panoramaStrips*100+"%"
+			contain.appendChild(div)
+		}
+	}
+	el.appendChild(contain)
+}*/
+/*
+
+panorama{
+	height: 80vh;
+	max-width:100%;
+  aspect-ratio: 16 / 9;
+	display:block;
+	perspective:700px;
+	overflow:hidden;
+}
+panorama .camera{
+	transform-style: preserve-3d;
+	height:100%;
+	position:relative;
+	transform:translateZ(700px) rotateY(0deg) translate3d(50%,50%,0);
+}
+panorama .camera > div{
+	translate:-50% -50%;
+	width:${panoramaStripW*panoramaStrips}px;
+	height:${panoramaScale}px;
+	position:absolute;
+	top:0;
+	left:0;
+	background-size: 100% 100%;
 }*/
 
 const sanitizer = document.createElement('div')
