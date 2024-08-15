@@ -721,7 +721,7 @@ function formatGetAttributeArr(e,a){
   }
 }*/
 let mcAssetsUrl = "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.0/assets/minecraft/textures/"
-const HTMLSafeElements = new Set(["h1","h2","h3","h4","h5","h6","p","img","video","audio","a","ul","ol","li","pre","code","br","b","i","big","center","small","span","strike","strong","sub","sup","table","tbody","td","tfoot","th","thead","tr","hr","button"])
+const HTMLSafeElements = new Set(["h1","h2","h3","h4","h5","h6","p","img","video","audio","a","ul","ol","li","pre","code","br","b","i","big","center","small","span","strike","strong","sub","sup","table","tbody","td","tfoot","th","thead","tr","hr","button","details","summary"])
 const HTMLSafeAttributes = new Set(["align","alt","width","height","href","src","media","title","style","target","controls","loop"])
 const HTMLEvalAttributes = new Set(["onclick","onmousemove","onmousedown","onmouseup","onmouseover","onmouseout","onmouseenter","onmouseleave","onmousewheel","onwheel"])
 let safeTemplate = document.createElement("template")
