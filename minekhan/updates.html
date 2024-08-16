@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<script>
-	fetch("updates.txt").then(r =>r.text()).then(r => {
-		document.body.insertAdjacentHTML("beforeend","<br>"+r.replace(/-- (.*)\n/g, (_,$1) => {
-			return "-- "+(new Date(+$1).toLocaleDateString(undefined,{year: "numeric", month: "long", day: "numeric"}))+"\n"
-		}).replace(/\n/g,"<br>"))
-	})
-</script>
