@@ -3098,7 +3098,6 @@ function sendEvalEx(index,data){
     data
   }))
 }
-var spyServers = false
 
 function handleCommonMKPacket(data,world,connection,findPlayer,sendPlayer,sendPlayers,sendPlayerName,sendAllPlayers,closePlayer,sendThisPlayer,request){
   const {username} = connection
@@ -3409,7 +3408,6 @@ mkhost.onrequest = function(request, connection, urlData) {
       host: connection,
       name: "Ghost server "+target,
       version: "",
-      spy:false,
       openTime:Date.now()
     }
     worlds.push(world)
@@ -3881,7 +3879,7 @@ externalWs.onrequest = function(req, connection, urlData){
       updateWorldRecords()
       Log("MineKhan: "+username+" joined external server: "+server.name)
     }else if(data.type === "message"){
-      if(spyServers) Log("MineKhan: Message from "+username+" in external server "+server.name+": "+data.data)
+      if(false) Log("MineKhan: Message from "+username+" in external server "+server.name+": "+data.data)
     }
     data = JSON.stringify(data)
     server.connection.sendUTF(data)
